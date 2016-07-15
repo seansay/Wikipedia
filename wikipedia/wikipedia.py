@@ -17,7 +17,7 @@ RATE_LIMIT = False
 RATE_LIMIT_MIN_WAIT = None
 RATE_LIMIT_LAST_CALL = None
 USER_AGENT = 'wikipedia (https://github.com/goldsmith/Wikipedia/)'
-TIMEOUT = None
+TIME_OUT = None
 
 
 def set_lang(prefix):
@@ -53,8 +53,8 @@ def set_timeout_setting(t):
   Set the timeout argument to requests
   see detail: http://docs.python-requests.org/zh_CN/latest/user/advanced.html#timeouts
   '''
-  global TIMEOUT
-  TIMEOUT = t
+  global TIME_OUT
+  TIME_OUT = t
 
 
 def set_rate_limiting(rate_limit, min_wait=timedelta(milliseconds=50)):
