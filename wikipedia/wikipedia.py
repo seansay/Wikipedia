@@ -337,6 +337,7 @@ class WikipediaPage(object):
       'inprop': 'url',
       'ppprop': 'disambiguation',
       'redirects': '',
+      'converttitles': '',
     }
     if not getattr(self, 'pageid', None):
       query_params['titles'] = self.title
